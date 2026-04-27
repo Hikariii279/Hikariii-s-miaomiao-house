@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>朵朵花园合成记 - 嵌入示例</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      padding: 32px 18px;
+      font-family: "Microsoft YaHei", "PingFang SC", "Segoe UI", sans-serif;
+      color: #4d3146;
+      background:
+        radial-gradient(circle at top left, rgba(255, 255, 255, 0.86), transparent 35%),
+        linear-gradient(180deg, #fff7ed, #ffe2ec);
+    }
+
+    .shell {
+      width: min(1100px, 100%);
+      margin: 0 auto;
+    }
+
+    .card {
+      padding: 24px;
+      border: 1px solid rgba(197, 133, 159, 0.22);
+      border-radius: 28px;
+      background: rgba(255, 252, 249, 0.86);
+      box-shadow: 0 18px 48px rgba(181, 101, 132, 0.14);
+      backdrop-filter: blur(14px);
+    }
+
+    h1 {
+      margin: 0 0 10px;
+      font-family: "STXingkai", "KaiTi", "Microsoft YaHei", cursive;
+      font-size: clamp(2rem, 4vw, 3.2rem);
+      color: #60354f;
+    }
+
+    p {
+      line-height: 1.8;
+      color: #83627a;
+    }
+
+    code {
+      padding: 2px 8px;
+      border-radius: 8px;
+      background: rgba(255, 255, 255, 0.78);
+      color: #5e3850;
+      font-family: Consolas, "Courier New", monospace;
+    }
+
+    .frame-wrap {
+      margin-top: 18px;
+      border-radius: 26px;
+      overflow: hidden;
+      box-shadow: 0 20px 60px rgba(145, 83, 103, 0.18);
+    }
+
+    iframe {
+      display: block;
+      width: 100%;
+      height: 980px;
+      border: 0;
+      background: white;
+    }
+  </style>
+</head>
+<body>
+  <main class="shell">
+    <section class="card">
+      <h1>网页嵌入示例</h1>
+      <p>
+        这个页面演示了怎样把小游戏放进别人的网页里。
+        实际使用时，只要把 <code>iframe</code> 的地址换成你的线上地址即可。
+      </p>
+      <p>
+        示例地址：<code>index.html?embed=1</code>
+      </p>
+
+      <div class="frame-wrap">
+        <iframe src="./index.html?embed=1" title="朵朵花园合成记"></iframe>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
